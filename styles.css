@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #d0ecf4;
+    color: #1f2937;
+    margin: 10px;
+}
+
+/* Header styles */
+.header-bg {
+    background-color: #9ef4e8; /* Dark blue */
+    color: #040404;
+}
+
+/* Button styles */
+button {
+    cursor: pointer;
+}
+
+/* Categories hover effect */
+.category:hover {
+    background-color: #cce4ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Modal styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Additional custom styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Animations */
+.animated {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    
+}
+
+/* Utility classes */
+.hidden {
+    display: none;
+}
+

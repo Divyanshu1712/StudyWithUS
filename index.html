@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSite - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 transition-colors duration-300" id="body">
+    <!-- Header Section -->
+    <header class="header-bg text-white py-4 dark:bg-gray-800 dark:text-gray-200">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="logo text-3xl font-bold">EduSite</div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Home</a></li>
+                    <li><a href="notes.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Notes</a></li>
+                    <li><a href="question-papers.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Question Papers</a></li>
+                    <li><a href="cheat-sheets.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Cheat Sheets</a></li>
+                    <li><a href="video-lectures.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Video Lectures</a></li>
+                    <li><a href="Quantum.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Quantum</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- add serach box in future -->
+            <!-- Dark Mode Toggle -->
+            <div class="dark-mode-toggle ml-4">
+                <button onclick="toggleDarkMode()" class="bg-gray-800 text-white px-4 py-2 rounded-md dark:bg-gray-300 dark:text-gray-900"> D/W </button>
+            </div>
+
+        </div>
+    </header>
+
+    <br>
+
+    <!-- Main Section -->
+    <main class="container mx-auto py-10">
+        <!-- Greeting Box -->
+        <section class="greeting-box bg-white p-6 rounded-lg shadow-lg mb-8 animate__animated animate__fadeInUp dark:bg-gray-900 dark:text-gray-300">
+            <h1 class="text-3xl font-bold mb-4">Welcome to EduSite</h1>
+            <p class="text-lg mb-4"><mark>EduSite</mark> is your go-to platform for AKTU educational resources. Whether you’re looking for notes, question papers, Quantum, cheat sheets, or video lectures, we’ve got you covered. Explore our categories and get the most out of your studies!</p>
+            <p class="text-lg">To get started, navigate to the various sections using the menu above. We offer a range of resources to enhance your learning experience.</p>
+        </section>
+
+        <!-- Media Section -->
+        <section class="media-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 animate__animated animate__fadeInUp">
+            <!-- Image Box -->
+            <div class="image-box bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 dark:bg-gray-800 dark:text-gray-200">
+                <h2 class="text-2xl font-bold mb-4">Explore Our Features</h2>
+                <img src="Books.jpg" alt="Custom Illustration" class="w-full h-auto rounded-lg">
+                <p class="mt-4">Discover the various features of EduSite that make learning easier and more effective.</p>
+            </div>
+
+            <!-- Video Box -->
+            <div class="video-box bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 dark:bg-gray-800 dark:text-gray-200">
+                <h2 class="text-2xl font-bold mb-4">Watch Our Introduction Video</h2>
+                <iframe class="w-full h-64 rounded-lg" src="#" frameborder="0" allowfullscreen></iframe>
+                <p class="mt-4">Get an overview of how EduSite can help you with your studies through our introduction video.</p>
+            </div>
+
+            <!-- Additional Media Box -->
+            <div class="additional-media bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 dark:bg-gray-800 dark:text-gray-200">
+                <h2 class="text-2xl font-bold mb-4">See How Others Are Using EduSite</h2>
+                <img src="community.jpeg" alt="Community" class="w-full h-auto rounded-lg">
+                <p class="mt-4">Learn how students and educators are benefiting from EduSite and how you can too.</p>
+            </div>
+        </section>
+
+        <!-- Forum Section -->
+        <section class="forum bg-white p-6 rounded-lg shadow-lg dark:bg-gray-800 dark:text-gray-300">
+            <h2 class="text-2xl font-bold mb-4">Forums</h2>
+            <div id="forum-discussions">
+                <!-- Example discussion thread -->
+                <div class="discussion-thread p-4 mb-4 bg-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:text-gray-300">
+                    <h3 class="text-xl font-semibold">Discussion Topic</h3>
+                    <p class="text-gray-700 dark:text-gray-400">This is a sample discussion thread. Users can post and comment here.</p>
+                </div>
+            </div>
+            <div class="add-discussion mt-4">
+                <h3 class="text-xl font-semibold mb-2">Start a New Discussion</h3>
+                <textarea placeholder="Write your discussion topic here..." class="w-full p-2 border border-gray-300 rounded-lg dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200"></textarea>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md mt-2 dark:bg-blue-800 dark:hover:bg-blue-900">Post</button>
+            </div>
+        </section>
+    </main>
+
+    <br>
+
+    <!-- Footer Section -->
+    <footer class="header-bg text-white py-4 dark:bg-gray-800 dark:text-gray-200">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="contact-info mb-4 md:mb-0">
+                <p>Contact us: Divyanshusri619@gmail.com</p>
+            </div>
+            <div class="social-media mb-4 md:mb-0 flex space-x-4">
+                <a href="https://www.facebook.com/" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Facebook</a>
+                <a href="https://twitter.com/?lang=en" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Twitter</a>
+                <a href="https://www.linkedin.com/" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">LinkedIn</a>
+            </div>
+            <div class="legal-links flex space-x-4">
+                <a href="TOS.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Terms of Service</a>
+                <a href="PP.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal with Google Sign-In Button -->
+    <script src="script.js"></script>
+    <!-- Load Google Sign-In API and initialize -->
+    <script src="https://apis.google.com/js/platform.js?onload=onLoadGoogleCallback" async defer></script>
+</body>
+</html>

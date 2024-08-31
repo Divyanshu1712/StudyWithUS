@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduSite - Home</title>
+    <title >EduSite - Home</title>
+    <link rel="icon" type="image/png" href="chat.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -13,7 +14,8 @@
     <!-- Header Section -->
     <header class="header-bg text-white py-4 dark:bg-gray-800 dark:text-gray-200">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="logo text-3xl font-bold">EduSite</div>
+            <div class="logo text-3xl font-bold">
+                <a href="#">EduSite</a></div>
             <nav>
                 <ul class="flex space-x-6">
                     <li><a href="index.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Home</a></li>
@@ -25,10 +27,13 @@
                     <li><a href="contact.html" class="hover:text-gray-300 transition duration-300 dark:hover:text-gray-400">Contact</a></li>
                 </ul>
             </nav>
+
             <!-- add serach box in future -->
+
+            
             <!-- Dark Mode Toggle -->
             <div class="dark-mode-toggle ml-4">
-                <button onclick="toggleDarkMode()" class="bg-gray-800 text-white px-4 py-2 rounded-md dark:bg-gray-300 dark:text-gray-900"> D/W </button>
+                <button onclick="toggleDarkMode()" class="dark"> Dark Mode </button>
             </div>
 
         </div>
@@ -57,7 +62,7 @@
             <!-- Video Box -->
             <div class="video-box bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 dark:bg-gray-800 dark:text-gray-200">
                 <h2 class="text-2xl font-bold mb-4">Watch Our Introduction Video</h2>
-                <iframe class="w-full h-64 rounded-lg" src="#" frameborder="0" allowfullscreen></iframe>
+                <iframe id="ytplayer" class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/ytplayer" frameborder="0" allowfullscreen></iframe>
                 <p class="mt-4">Get an overview of how EduSite can help you with your studies through our introduction video.</p>
             </div>
 
@@ -75,14 +80,14 @@
             <div id="forum-discussions">
                 <!-- Example discussion thread -->
                 <div class="discussion-thread p-4 mb-4 bg-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:text-gray-300">
-                    <h3 class="text-xl font-semibold">Discussion Topic</h3>
-                    <p class="text-gray-700 dark:text-gray-400">This is a sample discussion thread. Users can post and comment here.</p>
+                    <h3 class="text-xl font-semibold">YEEAHHH! YOU Got something!!</h3>
+                    <p class="text-gray-700 dark:text-gray-400"> YEs move through <mak>WEBSITE</mak> and explore notes, cheat-sheets, Quantum,question-papers, VIdeo lectures.</p>
                 </div>
             </div>
             <div class="add-discussion mt-4">
                 <h3 class="text-xl font-semibold mb-2">Start a New Discussion</h3>
                 <textarea placeholder="Write your discussion topic here..." class="w-full p-2 border border-gray-300 rounded-lg dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200"></textarea>
-                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md mt-2 dark:bg-blue-800 dark:hover:bg-blue-900">Post</button>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md mt-2 dark:bg-blue-800 dark:hover:bg-blue-900" onclick="post_button()">Post</button>
             </div>
         </section>
     </main>

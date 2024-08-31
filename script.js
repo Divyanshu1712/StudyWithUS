@@ -1,9 +1,7 @@
 // Dark Mode Toggle Function
 function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    document.querySelector('header').classList.toggle('dark-mode');
-    document.querySelector('footer').classList.toggle('dark-mode');
-    document.querySelector('.modal-content').classList.toggle('dark-mode');
+    alert('Dark Mode functionality not yet implemented.');
+    
 }
 
 // Search Function Placeholder
@@ -28,3 +26,13 @@ window.onload = () => {
     gsap.from(".greeting-box", { duration: 2, y: -50, opacity: 0, ease: "power3.out" });
     gsap.from(".media-section .image-box", { duration: 1, x: -100, opacity: 0, stagger: 0.3 });
 };
+
+//alert function after post button is clicked / post is submitted
+function post_button() {
+    alert("Thank you for your post! It will be reviewed by our team before it is published.");
+
+    // Clear the comment box (assuming the comment box has an id of 'discussionBox')
+    document.getElementById('discussionBox').value = '';
+  }
+
+//  Create a function where 

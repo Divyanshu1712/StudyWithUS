@@ -21,7 +21,7 @@ button {
 
 /* Categories hover effect */
 .category:hover {
-    background-color: #cce4ff;
+    background-color: #03254b;
     transition: background-color 0.3s ease;
 }
 
@@ -56,3 +56,10 @@ button {
     display: none;
 }
 
+.dark {
+    background-color: #6567b3;
+    color: #330c5b;
+    border-radius: 37px;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+}
